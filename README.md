@@ -1,17 +1,18 @@
+This directory contains the React implementation of the test application used in the thesis: "Comparison of Modern Frontend Frameworks: React, Svelte, and Qwik".
 
-# React + Vite
+The application is implemented as a client-side single-page application using a component-based architecture and explicit state management.
+It serves as one implementation of an identical notes application also developed using Svelte and Qwik.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The React version provides the following functionality:
+- creation, editing, and deletion of notes
+- keyword-based search across note titles and content
+- tag-based filtering
+- client-side data persistence using browser storage
 
-Currently, two official plugins are available:
+The React application is built using Node.js and a modern frontend build tool. To run the application locally, the following requirements and steps are needed:
+- Node.js (version 18 or newer recommended)
+- npm (included with Node.js)
+- From the root of the repository, navigate to the React implementation directory and install the project dependencies and run it
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm install
+npm run dev
